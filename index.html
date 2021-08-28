@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>FRUIT STORE</title>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<script type="text/javascript" src="jquery-1.8.3.min.js" ></script>
+	<script type="text/javascript" src="js/main.js" ></script>
+</head>
+<body>
+<div id="AppFruitStore" class="app-fruit-store"> 
+
+<div id="holderFillterInfo" class="holder-fillter-info">
+	<input id="fiterFruits" class="filter-fruits" type="text" placeholder="buscar"> 
+</div>
+<div id="holderProductsList" class="holder-products-list">
+
+<div id="1" class="fruit-card">
+<img src="imgs/fruits/apple-red.jpg" style="border-color: #ccff00;">
+<h2>Apple Red</h2>
+<p class="description">Lorem ipsum</p>
+<p class="price">$29</p>
+<span data="1" data-img="apple-red.jpg"
+               data-price="29"
+               data-fruit="Apple Red"onclick="hizoClick1()"
+
+>Agregar</span>
+<script>
+function hizoClick1() {
+  alert("“Has agregado un producto a tu carrito");
+}
+</script>
+</div></div>
+<div id="holderProductsCart" class="holder-products-cart">
+    <div id="totalProducts" class="total-products">
+    	
+    	<h1>TOTAL</h1>
+    	<span id="totalFruits" class="total-fruits">0</span>
+    	<span id="totalItems" class="total-items">0</span>
+    	<span id="totalPrice" class="total-price">0</span>
+    	<span id="totalPayment" class="total-payment"onclick="hizoClick2()">COMPRAR</span>
+<script>
+function hizoClick2() {
+  alert("“Has completado tu compra");
+}
+</script>
+    </div>	
+
+<div id="productsCart" class="products-cart"> 
+
+<div data-id="" class="cart-card">
+	<img class="img" src="imgs/thumbs/apple-red_thumb.jpg">
+	<span class="name">APPLE RED</span>
+	<br>
+	<span class="price">10</span>
+	<br>
+	<span class="count">9</span>
+	<span class="total">90</span>
+	<br>
+	<span class="min">&minus;</span>
+	<span class="add">&plus;</span>
+	<span class="cf"></span>
+	<span class="del"onclick="hizoClick()">remover del carrito</span>
+	<script>
+function hizoClick(){
+  alert("Se ha removido un producto de tu lista")};
+</script>
+
+</div></div></div>
+<span class="cf"></span>
+<div id="holderNotifications" class="holder-notifications">notificaciones
+ </div>
+</body>
+</html>

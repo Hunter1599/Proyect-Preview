@@ -1,0 +1,307 @@
+*{
+	font-family: Arial;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+	font-family: Arial;
+}
+.cf{
+	display: block;
+	position: relative;
+	clear: both;
+}
+/* App Principal */
+#AppFruitStore{
+
+}
+.app-fruit-store{ 
+	border: 4px #ccff00 solid;
+	width: 640px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 8px;
+}
+/* Filtro de busqueda */
+.holder-fillter-info{
+	border: 4px red solid;
+
+}
+.filter-fruits{
+	font-size: 1.3em;
+	padding: 4px;
+	display: block;
+	margin: 4px auto;
+	text-align: center;
+	border-radius: 4px;
+	border: 2px solid orange;
+	width: 40%;	
+	transition: width 0.35s ease-in-out,border 0.5s ease-in-out;
+}
+.filter-fruits:focus {
+	outline: none;
+	border: 2px solid #00be97;
+	width: 60%;
+	transition: width 0.35s ease-in-out;
+}
+/* Lista de Productos */
+.holder-products-list{
+	border: 4px blue solid;
+	width:48% ;
+	height: 93vh;
+	overflow-y: auto;
+	float: left;
+
+}
+
+.fruit-card{
+	width: 80%;
+	height: auto;
+	padding: 10px 20px 20px 20px;
+	margin: 8px auto;
+	box-shadow: 0 2px 4px #8f7c6f;
+	border-radius: 4px;
+	background-color: white;
+}
+.fruit-card img {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    border: 16px solid white;
+}
+.fruit-card h2 {
+    font-family: arial;
+	front-weight: normal;
+	text-align: center;
+	color: red;
+	margin: 0.5em auto;
+}
+
+.fruit-card p.description{
+	margin: 0.5em auto;
+	font-family: arial;
+}
+
+.fruit-card p.price{
+	margin: 0.5em auto;
+	font-family: arial;
+	text-align: center;
+	font-size: 24px;
+	color: brown;
+}
+
+.fruit-card span {
+
+	font-family: arial;
+	background-color: #faf2eb;
+	color: #3e0f0f;
+	font-size: 20px;
+	display: block;
+	width: 90%;
+	padding: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 4px;	
+	transition: background-color 0.35s ease-in-out;
+}
+.fruit-card span:hover{
+	background-color: #00be97;
+	color: white;
+}
+
+/* Carrito de Compras */
+.holder-products-cart{
+	border: 4px black solid;
+	background-color: white;
+	width: 48%;
+	height: 93vh;
+	overflow-y: auto;
+	float: right;
+
+}
+#totalProducts{}
+.holder-products-cart .total-products{
+     
+     
+     padding: 20px;
+     text-align: center;
+     background-color: white;
+}
+
+.holder-products-cart .total-products h3{
+	font-size: 24px;
+	margin: 0 0 16px 0;
+	text-align: center;
+	font-weight: normal;
+
+}
+
+.holder-products-cart .total-products span{
+	font-size: 24px;
+}
+
+.holder-products-cart .total-products .total-fruits,
+.holder-products-cart .total-products .total-items ,
+.holder-products-cart .total-products .total-price{
+	background-color: #faf2eb;
+	margin: 8px auto;
+	padding: 8px;
+	border-radius: 4px;
+	display: block;
+}
+
+.holder-products-cart .total-products .total-fruits{}
+
+.holder-products-cart .total-products .total-fruits:after{
+	content: " Frutas";
+}
+.holder-products-cart .total-products .total-items{}
+
+.holder-products-cart .total-products .total-items:after{
+	content: " Piezas";
+}
+.holder-products-cart .total-products .total-price{}
+
+.holder-products-cart .total-products .total-price:before{
+	content: " Total $";
+}
+.holder-products-cart .total-products .total-payment{
+	
+	display: block;
+	text-transform: lowercase;
+	background-color: orange;
+	color: #fff;
+	border-radius: 4px;
+	margin: 8px auto;
+	cursor: pointer;
+	padding: 8px;
+	transition: background-color 0.35s ease-in-out;
+}
+.holder-products-cart .total-products .total-payment:hover{
+     background-color: gold;
+
+
+}
+//*productos agregados*//
+#productsCart{}
+.holder-products-cart .products-cart{
+     
+     background-color: lightgreen;
+}
+.holder-products-cart .cart-card{
+	position: relative;
+	background-color: white;
+	box-shadow: 0 2px 4px #8f7c6f;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 24px auto;
+	width: 90%;
+	animation: fruits-card-animation 0.35s ease-in-out;
+}
+/*animacion*/
+
+
+.holder-products-cart  .cart-card .img{
+	width: 20%;
+	height: auto;
+
+}
+.holder-products-cart .cart-card span{
+   padding: 4px;
+   margin: 4px;
+   font-size: 1.5em;
+}
+
+.holder-products-cart .cart-card .name{
+	position: absolute;
+	font-weight: bold;
+	left: 4em;
+	font-size: 1.3em;
+}
+.holder-products-cart .cart-card .price{
+
+	position: absolute;
+	display: inline-block;
+	top: 2em;
+	left: 4em;
+	font-size: 1.3em;
+
+}
+
+.holder-products-cart .cart-card .price:before{
+	content:"Precio $";
+}
+.holder-products-cart .cart-card .count{
+	display: inline-block;
+	width: 42%;
+	font-size: 1.2em;
+	text-align: center;
+}
+.holder-products-cart .cart-card .count:before{
+	content: "Pzs ";
+}
+.holder-products-cart .cart-card .total{
+      display: inline-block;
+      width: 42%;
+      font-size: 1.2em;
+      text-align: center;
+}
+
+.holder-products-cart .cart-card .total:before{
+      content: "Monto $";
+}
+.holder-products-cart .cart-card span.min,
+.holder-products-cart .cart-card span.add,
+.holder-products-cart .cart-card span.del{
+	  cursor: pointer;
+	  display: inline-block;
+	  text-align: center;
+	  font-weight: bold;
+	  border-radius: 4px;
+	  color: white;
+
+}
+
+
+.holder-products-cart .cart-card span.min{
+    width: 42%;
+	float: right;
+	background-color: #be0024;
+	border: 2px solid #be0024;
+}
+.holder-products-cart .cart-card span.add{
+
+	width: 42%;
+	float: left;
+	background-color: #00be97;
+	border: 2px solid #00be97;
+
+}
+.holder-products-cart .cart-card span.del{
+       display: block;
+       text-transform: lowercase;
+       font-weight: normal;
+       background-color: white;
+       color: red;
+       border: 2px solid #be0024;
+}
+
+
+/* Notificaciones */
+.holder-notifications{
+	border: 4px yellow solid;
+
+}
+/*EXTRAS*/
+@keyframes fruits-card-animation{
+	0% {opacity: 0;margin-left: -50%;}
+	100%{opacity: 100;margin-left: 0%;}
+}
